@@ -1,3 +1,14 @@
 <resources>
     <string name="app_name">Runnify</string>
+    <string name="already_have_an_account_login">Already have an account? Sign in</string>
+    <string name="email">email</string>
+    <string name="password">password</string>
+    <string name="login">login</string>
+    <string name="don_t_have_an_account_sign_in">Don\'t have an account? Sign in</string>
+    <string name="confirm_password">confirm password</string>
+    <string name="signed">sign</string>
+    <string name="title_activity_profile">ProfileActivity</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
 </resources>

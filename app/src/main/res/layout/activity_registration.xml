@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:orientation="vertical" >
+
+        <EditText
+            android:id="@+id/etSEmailAddress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="190dp"
+            android:autofillHints="emailAddress"
+            android:ems="10"
+            android:hint="@string/email"
+            android:inputType="textEmailAddress"
+            android:minHeight="48dp"
+            android:textColorHint="#757575"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/etSPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="70dp"
+            android:autofillHints="password"
+            android:ems="10"
+            android:hint="@string/password"
+            android:inputType="textPassword"
+            android:minHeight="48dp"
+            android:textColorHint="#757575"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/etSEmailAddress" />
+
+        <EditText
+            android:id="@+id/etSConfPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="70dp"
+            android:autofillHints="password"
+            android:ems="10"
+            android:hint="@string/confirm_password"
+            android:inputType="textPassword"
+            android:minHeight="48dp"
+            android:textColorHint="#757575"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/etSPassword"
+            tools:ignore="TextContrastCheck" />
+
+        <Button
+            android:id="@+id/btnSSigned"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:layout_marginTop="100dp"
+            android:text="@string/signed"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.551"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/etSConfPassword" />
+
+        <TextView
+            android:id="@+id/tvRedirectLogin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_marginTop="59dp"
+            android:gravity="center_horizontal"
+            android:text="@string/already_have_an_account_login"
+            android:textColor="#18206F"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btnSSigned" />
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
